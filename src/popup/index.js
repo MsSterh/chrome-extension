@@ -6,3 +6,13 @@ showAltEmptyImage.onclick = function(element) {
     });
   });
 };
+
+let showNotification = document.getElementById('showNotification');
+showNotification.onclick = function(element) {
+  chrome.notifications.create('', {
+    type: 'basic',
+    iconUrl: 'images/128.png',
+    title: 'Your notification',
+    message: 'Some description'
+  }, function(notificationId) {})
+}
