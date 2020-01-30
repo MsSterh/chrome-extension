@@ -16,3 +16,9 @@ showNotification.onclick = function(element) {
     message: 'Some description'
   }, function(notificationId) {})
 }
+
+let showNewtab = document.getElementById('showNewtab');
+showNewtab.onclick = function(element) {
+  var newURL = "index.html";
+  chrome.tabs.create({ url: newURL });
+}
