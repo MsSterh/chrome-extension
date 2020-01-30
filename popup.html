@@ -1,5 +1,35 @@
+<!DOCTYPE html>
 <html>
-<body>
-  Popup
-</body>
+  <head>
+    <style>
+      body {
+        background: #fff;
+        padding: 20px 20px 10px;
+      }
+
+      button {
+        background: #ddd;
+        border-radius: 3px;
+        border: 1px solid #ddd;
+        cursor: pointer;
+        display: block;
+        font-size: 14px;
+        outline: none;
+        margin-bottom: 10px;
+        padding: 8px 10px;
+        white-space: nowrap;
+      }
+
+      button:hover {
+        background: #ccc;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="showAltEmptyImage">Alt-empty images</button>
+    <button id="showNewtab">Show new tab</button>
+    <button id="showNotification">Show notification</button>
+    <script src="src/popup/index.js"></script>
+  </body>
 </html>

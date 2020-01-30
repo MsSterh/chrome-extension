@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Github Tab",
+  "author": "Anastasiia Bakuta",
+  "version": "1.0.1",
+  "description": "Replace new tab screen with GitHub trending projects.",
+  "icons": {
+    "16": "images/16.png",
+    "48": "images/48.png",
+    "128": "images/128.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/16.png",
+      "48": "images/48.png",
+      "128": "images/128.png"
+    }
+  },
+  "offline_enabled": true,
+  "permissions": ["activeTab", "declarativeContent", "notifications", "storage"]
+}
