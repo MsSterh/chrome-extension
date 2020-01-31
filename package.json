@@ -1,7 +1,7 @@
 {
   "name": "c-r-e",
   "version": "1.0.0",
-  "description": "",
+  "description": "Run: ```Shell npm run dev ```",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,5 +13,17 @@
   "license": "ISC",
   "devDependencies": {
     "cssnano": "^4.1.10"
-  }
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MsSterh/chrome-extension.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MsSterh/chrome-extension/issues"
+  },
+  "homepage": "https://github.com/MsSterh/chrome-extension#readme"
 }
