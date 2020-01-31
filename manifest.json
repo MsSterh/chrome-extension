@@ -10,14 +10,14 @@
     "128": "images/128.png"
   },
   "chrome_url_overrides": {
-    "newtab": "index.html"
+    "newtab": "build/index.html"
   },
   "background": {
     "scripts": ["background.js"],
     "persistent": false
   },
   "page_action": {
-    "default_popup": "popup.html",
+    "default_popup": "build/popup.html",
     "default_icon": {
       "16": "images/16.png",
       "48": "images/48.png",

@@ -1,3 +1,5 @@
+require('../images/notification_logo.png')
+
 let showAltEmptyImage = document.getElementById('showAltEmptyImage');
 showAltEmptyImage.onclick = function(element) {
   chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
@@ -11,7 +13,7 @@ let showNotification = document.getElementById('showNotification');
 showNotification.onclick = function(element) {
   chrome.notifications.create('', {
     type: 'basic',
-    iconUrl: 'images/128.png',
+    iconUrl: 'images/notification_logo.png',
     title: 'Your notification',
     message: 'Some description'
   }, function(notificationId) {})
@@ -19,6 +21,6 @@ showNotification.onclick = function(element) {
 
 let showNewtab = document.getElementById('showNewtab');
 showNewtab.onclick = function(element) {
-  var newURL = "index.html";
+  var newURL = "build/index.html";
   chrome.tabs.create({ url: newURL });
 }
