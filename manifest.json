@@ -34,5 +34,6 @@
     }
   ],
   "offline_enabled": true,
-  "permissions": ["activeTab", "declarativeContent", "notifications", "storage"]
+  "permissions": ["activeTab", "declarativeContent", "notifications", "storage"],
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://unpkg.com; object-src 'self'"
 }

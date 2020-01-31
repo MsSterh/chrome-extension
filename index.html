@@ -1,6 +1,35 @@
+<!DOCTYPE html>
 <html>
-<body>
-  <script src="./src/app/index.js"></script>
-  123
-</body>
+  <head>
+    <style>
+      body {
+        background: #fff;
+        padding: 20px 20px 10px;
+      }
+
+      button {
+        background: #ddd;
+        border-radius: 3px;
+        border: 1px solid #ddd;
+        cursor: pointer;
+        display: block;
+        font-size: 14px;
+        outline: none;
+        margin-bottom: 10px;
+        padding: 8px 10px;
+        white-space: nowrap;
+      }
+
+      button:hover {
+        background: #ccc;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="./src/app/index.js"></script>
+  </body>
 </html>
